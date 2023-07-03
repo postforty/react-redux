@@ -10,3 +10,6 @@
   + ```import { legacy_createStore as createStore } from "redux";```
 ## 리액트 리덕스 설치
 + yarn add react-redux
+## 리덕스 개발자 도구
++ 크롬 확장 프로그램 설치: https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
++ yarn add redux-devtools-extension
