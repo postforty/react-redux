@@ -6,10 +6,14 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import rootReducer from "./modules";
 import { applyMiddleware, legacy_createStore as createStore } from "redux";
-import myLogger from "./middlewares/myLogger";
+// import myLogger from "./middlewares/myLogger";
 import logger from "redux-logger";
+import { composeWithDevTools } from "redux-devtools-extension";
 
-const store = createStore(rootReducer, applyMiddleware(logger));
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(logger))
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
