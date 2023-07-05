@@ -9,10 +9,11 @@ import { applyMiddleware, legacy_createStore as createStore } from "redux";
 // import myLogger from "./middlewares/myLogger";
 import logger from "redux-logger";
 import { composeWithDevTools } from "redux-devtools-extension";
+import ReduxThunk from "redux-thunk";
 
 const store = createStore(
   rootReducer,
-  composeWithDevTools(applyMiddleware(logger))
+  composeWithDevTools(applyMiddleware(ReduxThunk, logger))
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
