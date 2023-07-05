@@ -17,3 +17,7 @@
 + 설치
   + yarn add redux-logger
   ※ 참고: https://react.vlpt.us/redux-middleware/03-logger-and-devtools.html
+### redux-devtools
++ 설치
+  + yarn add redux-devtools-extension
+  ※ 참고: https://react.vlpt.us/redux-middleware/03-logger-and-devtools.html
