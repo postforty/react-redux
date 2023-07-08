@@ -25,3 +25,6 @@
 + 설치
   + yarn add redux-thunk
   ※ 참고: https://react.vlpt.us/redux-middleware/04-redux-thunk.html
+### 리액트 라우터
++ 설치
+  + yarn add react-router-dom
