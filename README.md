@@ -28,3 +28,7 @@
 ### 리액트 라우터
 + 설치
   + yarn add react-router-dom
++ 이슈
+  + 라우터 적용시 예제 코드의 방식으로는 작동하지 않음(에러 발생)
+    + App.js에 Routes 적용해야 함
+    + PostPage.js에 useParams 적용해야 함
