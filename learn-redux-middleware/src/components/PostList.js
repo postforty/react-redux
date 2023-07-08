@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function PostList({ posts }) {
+  console.log("posts : ", posts);
   return (
     <ul>
       {posts.map((post) => (
